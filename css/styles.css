@@ -33,6 +33,12 @@ body {
     clip-path: inset(100%);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* глобальный сброс стилей по селектору тега для элементов */
 h1,
 h2,
