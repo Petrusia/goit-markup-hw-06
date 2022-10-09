@@ -330,6 +330,10 @@ ul {
 
 }
 
+.footer-nav-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .footer-address {
     display: inline-block;
     margin-bottom: 6px;
