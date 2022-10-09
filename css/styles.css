@@ -324,10 +324,8 @@ ul {
     background-color: var(--black-rock-color);
 }
 
-.footer-logo {
-    display: inline-block;
-    margin-bottom: 20px;
-
+.footer-nav {
+    margin-top: 20px;
 }
 
 .footer-nav-item:not(:last-child) {
@@ -335,13 +333,9 @@ ul {
 }
 
 .footer-address {
-    display: inline-block;
-    margin-bottom: 6px;
     color: var(--white-color);
 }
 
 .footer-contact {
-    display: inline-block;
-    margin-bottom: 9px;
     color: var(--white-color-transparent-60);
 }
