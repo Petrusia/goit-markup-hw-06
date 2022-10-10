@@ -1,18 +1,18 @@
 :root {
-    --white-color: #FFFFFF;
+    --white-color: #ffffff;
     --white-color-transparent-60: rgba(255, 255, 255, 0.6);
-    --ghost-white-color: #F5F4FA;
+    --ghost-white-color: #f5f4fa;
     --grey-color: #757575;
-    --whisper-color: #ECECEC;
-    --dodger-blue-color: #2196F3;
+    --whisper-color: #ececec;
+    --dodger-blue-color: #2196f3;
     --nero-color: #212121;
-    --black-rock-color: #2F303A;
+    --black-rock-color: #2f303a;
     --black-color: #000000;
-    --btn-active-color: #188CE8;
+    --btn-active-color: #188ce8;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -35,8 +35,8 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 /* глобальный сброс стилей по селектору тега для элементов */
@@ -93,7 +93,6 @@ ul {
 .link-item.footer-logo {
     color: var(--white-color);
 }
-
 
 .section-title {
     margin-bottom: 50px;
@@ -163,7 +162,8 @@ ul {
 }
 
 .hero-title {
-    margin-bottom: 30px;
+    max-width: 696px;
+    margin: 0 auto 30px;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -175,7 +175,7 @@ ul {
 
 .hero-btn {
     padding: 10px 32px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
@@ -197,9 +197,11 @@ ul {
     gap: 30px;
 }
 
-/*.advantage-list-item:not(:last-child) {*/
-/*    margin-right: 30px;*/
-/*}*/
+.advantage-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+
+
+}
 
 .advantage-title {
     margin-bottom: 10px;
@@ -235,7 +237,8 @@ ul {
     text-align: center;
     background-color: var(--white-color);
     border-radius: 0 0 4px 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .our-team-title {
@@ -268,15 +271,15 @@ ul {
 }
 
 .portfolio-item-caption {
-    margin-top: -8px;
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    margin-top: -8px;
+    border: 1px solid #eeeeee;
     border-top: transparent;
 }
 
 .portfolio-btn {
     padding: 6px 22px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
@@ -291,8 +294,7 @@ ul {
 .portfolio-btn:focus {
     color: var(--white-color);
     background-color: var(--dodger-blue-color);
-    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
-    0 1px 2px rgba(0, 0, 0, 0.08),
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
     0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -300,7 +302,6 @@ ul {
     color: var(--white-color);
     background-color: var(--dodger-blue-color);
 }
-
 
 .project-title {
     margin-bottom: 4px;
