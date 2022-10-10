@@ -256,12 +256,14 @@ ul {
   margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
+  list-style: none;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  list-style: none;
 }
 
 .project-caption {
