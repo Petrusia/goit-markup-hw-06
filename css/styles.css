@@ -86,14 +86,6 @@ ul {
     color: var(--dodger-blue-color);
 }
 
-.link-item.header-logo {
-    color: var(--black-color);
-}
-
-.link-item.footer-logo {
-    color: var(--white-color);
-}
-
 .section-title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -121,6 +113,20 @@ ul {
     align-items: center;
 }
 
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.link-item.header-logo {
+    color: var(--black-color);
+}
+
+.logo-blue {
+    color: var(--dodger-blue-color);
+}
+
 .header-site-nav {
     display: flex;
     margin-left: 93px;
@@ -139,17 +145,6 @@ ul {
 
 .header-contact {
     color: var(--grey-color);
-}
-
-.logo {
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--black-color);
-}
-
-.logo .logo-blue {
-    color: var(--dodger-blue-color);
 }
 
 /*Hero section*/
@@ -323,6 +318,10 @@ ul {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--black-rock-color);
+}
+
+.link-item.footer-logo {
+    color: var(--white-color);
 }
 
 .footer-nav {
