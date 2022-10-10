@@ -323,7 +323,7 @@ ul {
   color: var(--white-color);
 }
 
-.footer-contacts {
+.footer-contact {
   margin-top: 20px;
 }
 
@@ -339,6 +339,6 @@ ul {
   color: var(--white-color);
 }
 
-.footer-contacts {
+.footer-contact {
   color: var(--white-color-transparent-60);
 }
