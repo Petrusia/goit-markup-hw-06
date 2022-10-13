@@ -1,8 +1,10 @@
 :root {
   --white-color: #ffffff;
   --white-color-transparent-60: rgba(255, 255, 255, 0.6);
+  --white-color-transparent-10: rgba(255, 255, 255, 0.1);
   --ghost-white-color: #f5f4fa;
   --grey-color: #757575;
+  --dark-grey-color: #afb1b8;
   --whisper-color: #ececec;
   --dodger-blue-color: #2196f3;
   --nero-color: #212121;
@@ -91,6 +93,29 @@ ul {
   text-align: center;
 }
 
+.social-icon-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--dark-grey-color);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--dodger-blue-color);
+  fill: var(--white-color);
+}
+
 /*Header section*/
 
 .header {
@@ -130,7 +155,7 @@ ul {
   /*gap: 50px;*/
 }
 
-.contact-nav {
+.contacts-nav {
   display: flex;
   margin-left: auto;
   list-style: none;
@@ -141,17 +166,38 @@ ul {
   margin-right: 50px;
 }
 
-.header-contact {
+.contacts-nav-item {
+  display: flex;
   color: var(--grey-color);
+  align-items: center;
+}
+
+.contacts-nav-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /*Hero section*/
 
 .hero {
+  max-width: 1600px;
+  min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   background-color: var(--black-rock-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/happy-people.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid var(--black-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -178,6 +224,7 @@ ul {
   background-color: var(--dodger-blue-color);
   border: none;
   border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover {
@@ -187,12 +234,22 @@ ul {
 /*Advantage section*/
 .advantage-list {
   display: flex;
-  gap: 30px;
   list-style: none;
+  gap: 30px;
 }
 
 .advantage-list-item {
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantage-icon {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--ghost-white-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantage-title {
@@ -210,8 +267,8 @@ ul {
 
 .our-work-list {
   display: flex;
-  gap: 30px;
   list-style: none;
+  gap: 30px;
 }
 
 /*Our team section*/
@@ -222,8 +279,9 @@ ul {
 
 .our-team-list {
   display: flex;
-  gap: 30px;
   list-style: none;
+  justify-content: center;
+  gap: 30px;
 }
 
 .our-team-item {
@@ -245,8 +303,48 @@ ul {
 }
 
 .our-team-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.our-team-icon-list {
+  justify-content: center;
+}
+
+/*Clients list*/
+
+.clients-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--dark-grey-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--dark-grey-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--dodger-blue-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--dodger-blue-color);
 }
 
 /*Portfolio section*/
@@ -254,19 +352,19 @@ ul {
 .portfolio-btn-list {
   display: flex;
   margin-bottom: 50px;
+  list-style: none;
   justify-content: center;
   gap: 8px;
-  list-style: none;
 }
 
 .portfolio-list {
   display: flex;
+  list-style: none;
   flex-wrap: wrap;
   gap: 30px;
-  list-style: none;
 }
 
-.project-caption {
+.portfolio-item-caption {
   padding: 20px 24px;
   margin-top: -8px;
   border: 1px solid #eeeeee;
@@ -299,7 +397,7 @@ ul {
   background-color: var(--dodger-blue-color);
 }
 
-.project-title {
+.portfolio-item-title {
   margin-bottom: 4px;
   font-size: 18px;
   font-weight: 700;
@@ -308,9 +406,19 @@ ul {
   color: var(--nero-color);
 }
 
-.project-text {
+.portfolio-item-text {
   font-size: 16px;
   line-height: 1.9;
+}
+
+/*.portfolio-list-item {*/
+/*  */
+/*}*/
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
+    0 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 /*Footer section*/
@@ -343,4 +451,27 @@ ul {
 
 .footer-contact {
   color: var(--white-color-transparent-60);
+}
+
+.footer-flex {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+
+.footer-container {
+  width: 270px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.footer-icon-link {
+  background-color: var(--white-color-transparent-10);
 }
